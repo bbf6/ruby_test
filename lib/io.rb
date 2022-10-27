@@ -16,7 +16,7 @@ class Console
   def read_confirmation(label)
     print "#{label} [s/n]"
     value = gets.chomp
-    comfirms?
+    comfirms?(value)
   end
 
   private
