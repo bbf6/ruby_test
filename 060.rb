@@ -45,8 +45,6 @@ end
 class Polynomial
   include TypeValidation
 
-  attr_reader :monomials
-
   def initialize(monomials)
     @monomials = monomials
   end
@@ -59,6 +57,8 @@ class Polynomial
   end
 
   private
+
+  attr_reader :monomials
 
   def reduce
     # simplifica el polinomio sumando los monomios que compartan el mismo grado
